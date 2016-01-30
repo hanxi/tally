@@ -1,0 +1,21 @@
+.container {
+    max-width: 800px;
+}
+
+.header {
+    text-align: center;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button{
+    -webkit-appearance: none !important;
+    margin: 0;
+}
+
+.f-left {
+    float: left;
+}
+
+.f-right {
+    float: right;
+}

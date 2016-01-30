@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>记账本</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <script src="lib/jquery-1.12.0.min.js"></script>
+    <script src="lib/jquery.jsontotable.min.js"></script>
+
+</head>
+
+<body>
+
+    <div id="index" class="container">
+
+        <div class="header">
+            <h2 class="title">记账单</h2>
+        </div>
+
+        <div id="billlist" class="row">
+        </div>
+
+    </div>
+
+    <div id="detail" class="container" style="display: none;">
+
+        <div class="header">
+            <h2 class="title">账单详情</h2>
+        </div>
+
+        <div id="detaillist" class="row">
+
+        </div>
+        <div class="row">
+            <button class="button-primary f-left" name="back">返回</button>
+            <button class="button-primary f-right" id="delete">删除</button>
+        </div>
+
+    </div>
+
+    <div id="add" class="container" style="display: none;">
+
+        <div class="header">
+            <h2 class="title">添加账单</h2>
+        </div>
+
+        <div id="addlist" class="row">
+            <label for="itemname">物品</label>
+            <input class="u-full-width" type="text" placeholder="输入物品名称" name="itemname"></input>
+            <label for="price">价格(元)</label>
+            <input class="u-full-width" type="number" placeholder="输入价格" name="price"></input>
+            <label for="payman">购买者</label>
+            <select class="u-full-width" name="payman">
+                <option value="" disabled selected>选择购买者</option>
+                <option value="1">购买者A</option>
+                <option value="2">购买者B</option>
+                <option value="3">购买者C</option>
+                <option value="4">购买者D</option>
+            </select>
+            <button class="button-primary f-left" name="back">返回</button>
+            <button class="button-primary f-right" id="submitnewitem">提交</button>
+        </div>
+
+    </div>
+
+    <script src="js/app.js"></script>
+  </body>
+</html>
